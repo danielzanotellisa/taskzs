@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -25,7 +26,10 @@ public class Task {
     private String name;
 
     @Column(nullable = false)
-    private Date deadline;
+    private String description;
+
+    @Column(nullable = false)
+    private LocalDate deadline;
 
     @CreationTimestamp
     @Column(name = "created_at")
