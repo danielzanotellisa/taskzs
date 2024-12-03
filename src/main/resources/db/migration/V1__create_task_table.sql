@@ -4,5 +4,5 @@ CREATE TABLE tasks(
     description varchar(255) not null,
     deadline date NOT NULL,
     created_at timestamp,
-    order integer
+    task_order integer
 );

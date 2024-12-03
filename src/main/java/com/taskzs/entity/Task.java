@@ -35,6 +35,6 @@ public class Task {
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
-    @Column(name = "order")
+    @Column(name = "task_order")
     private Integer order;
 }
