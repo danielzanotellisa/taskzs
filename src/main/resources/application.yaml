@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: taskzs
+  datasource:
+    url: jdbc:postgresql://0.0.0.0:5432/taskzs
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      show-sql: true
+
+    flyway:
+      enabled: true
+
+
